@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Day One Content Operations',
 
-  projectId: 'p3agq1w3',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID!,
+  dataset: process.env.SANITY_STUDIO_DATASET!,
 
   plugins: [structureTool(), visionTool()],
 
